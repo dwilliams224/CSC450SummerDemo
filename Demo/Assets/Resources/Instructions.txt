@@ -1,0 +1,7 @@
+Move your head left, right, up, or down to look around.
+You have a VR headset button near your right temple
+Hover the reticle on an icon and push the VR headset button to select after cursor has changed
+You can click on buttons or objects by looking at them for at least 2 sec
+To find the menu look down towards your feet
+To rotate the table, select the gray buttons with your headset
+Look at a data point to bring up information about it
