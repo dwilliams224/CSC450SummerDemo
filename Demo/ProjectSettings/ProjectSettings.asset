@@ -620,11 +620,12 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 0
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 58e378df-ac76-404a-9265-9e680cd50c77
+  projectName: ProjectBirdboard
+  organizationId: spike2240
   cloudEnabled: 0
   enableNewInputSystem: 0
