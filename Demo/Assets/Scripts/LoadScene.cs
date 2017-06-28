@@ -5,11 +5,6 @@ using UnityEngine;
 
 public class LoadScene : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        // Only specifying the sceneName or sceneBuildIndex will load the scene with the Single mode
-       
-    }
 
     public void LoadVR()
     {
@@ -20,10 +15,5 @@ public class LoadScene : MonoBehaviour {
     {
         SceneManager.LoadSceneAsync("MenuScene");
     }
-
-
-    // Update is called once per frame
-    void Update () {
 		
-	}
 }

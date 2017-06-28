@@ -18,9 +18,6 @@ public class birdCycler : MonoBehaviour {
     private Text textField;
     int i = 0;
 
-    void Awake() {
-        
-    }
 
     void prepBirdData(){
           currentDataPoint = targetDataPoint.GetDataPoint();
