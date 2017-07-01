@@ -23,9 +23,4 @@ public class InstructionTip : MonoBehaviour {
 
         text.text = instructions[index];
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

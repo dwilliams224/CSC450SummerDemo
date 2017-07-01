@@ -5,11 +5,6 @@ using UnityEngine;
 public class LoadingIcon : MonoBehaviour {
 
     public float rotationSpeed = 180f;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {

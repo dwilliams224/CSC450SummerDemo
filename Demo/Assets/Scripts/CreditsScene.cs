@@ -16,9 +16,5 @@ public class CreditsScene : MonoBehaviour {
         text.text = credits.text;
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

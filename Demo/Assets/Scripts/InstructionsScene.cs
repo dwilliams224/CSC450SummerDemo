@@ -9,22 +9,15 @@ public class InstructionsScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        text = GetComponent<Text>();  //initialize text
+		text = GetComponent<Text> ();  //initialize text
 
-        TextAsset instructionsFull = Resources.Load("Instructions") as TextAsset;
+		TextAsset instructionsFull = Resources.Load ("Instructions") as TextAsset;
 
-        string[] instructions = instructionsFull.text.Split('\n');
+		string[] instructions = instructionsFull.text.Split ('\n');
 
-        for (int i = 0; i < instructions.Length; i++)
-        {
-            text.text += instructions[i];
-            text.text += "\n\n";
-        }
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		for (int i = 0; i < instructions.Length; i++) {
+			text.text += instructions [i];
+			text.text += "\n\n";
+		}
 	}
 }
