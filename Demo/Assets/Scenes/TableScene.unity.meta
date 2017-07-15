@@ -1,3 +1,6 @@
+/* Environment appears as tablescene where user can select locations. */
+/* Note: may opt for a billboard style. */
+
 fileFormatVersion: 2
 guid: ef68002bff8ef924bb66cbed338bcb82
 timeCreated: 1488049533
