@@ -1,4 +1,4 @@
-/* Environment appears as tablescene where user can select locations. Note: may opt for a billboard style. */
+/* Environment appears as tablescene where user can select locations. May opt for a billboard style in the future. */
 
 fileFormatVersion: 2
 guid: ef68002bff8ef924bb66cbed338bcb82
