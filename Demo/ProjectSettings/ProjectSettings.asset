@@ -304,7 +304,6 @@ PlayerSettings:
   switchSocketMemoryPoolSize: 6144
   switchSocketAllocatorPoolSize: 128
   switchSocketConcurrencyLimit: 14
-  switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
   switchApplicationID: 0x0005000C10000001
   switchNSODependencies: 
@@ -383,7 +382,7 @@ PlayerSettings:
   switchApplicationErrorCodeCategory: 
   switchUserAccountSaveDataSize: 0
   switchUserAccountSaveDataJournalSize: 0
-  switchApplicationAttribute: 0
+  switchAttribute: 0
   switchCardSpecSize: 4
   switchCardSpecClock: 25
   switchRatingsMask: 0
@@ -410,7 +409,6 @@ PlayerSettings:
   switchParentalControl: 0
   switchAllowsScreenshot: 1
   switchDataLossConfirmation: 0
-  switchSupportedNpadStyles: 3
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 
@@ -540,7 +538,14 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: CROSS_PLATFORM_INPUT
+    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    14: MOBILE_INPUT
+    17: MOBILE_INPUT
+    20: MOBILE_INPUT
+    22: MOBILE_INPUT
   platformArchitecture: {}
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
@@ -627,11 +632,15 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    UNet: 0
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
+    UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 58e378df-ac76-404a-9265-9e680cd50c77
+  cloudProjectId: 7883adf2-f83a-4959-8a07-46fff3d2521e
   projectName: ProjectBirdboard
-  organizationId: spike2240
+  organizationId: chadsmash72
   cloudEnabled: 0
   enableNewInputSystem: 0
