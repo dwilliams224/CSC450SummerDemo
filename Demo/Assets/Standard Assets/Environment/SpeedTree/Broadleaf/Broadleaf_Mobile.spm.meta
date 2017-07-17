@@ -4,7 +4,7 @@ SpeedTreeImporter:
   serializedVersion: 4
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
-  alphaTestRef: 0.33
+  alphaTestRef: 0.274
   bestWindQuality: 4
   hasBillboard: 1
   lODSettings:
@@ -33,9 +33,9 @@ SpeedTreeImporter:
     enableHue: 1
     windQuality: 4
   - height: 0.01
-    castShadows: 0
-    receiveShadows: 0
-    useLightProbes: 0
+    castShadows: 1
+    receiveShadows: 1
+    useLightProbes: 1
     reflectionProbeUsage: 0
     enableBump: 1
     enableHue: 1
