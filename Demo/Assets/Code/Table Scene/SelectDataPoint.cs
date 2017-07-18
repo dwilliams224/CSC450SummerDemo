@@ -11,7 +11,7 @@ public class SelectDataPoint : MonoBehaviour {
 		targetDataPoint.SetDataPoint (gameObject.name);
 
 		// Loads the WorldScene
-		LoadingScreenManager.LoadScene("WorldScene");
+		LoadingScreenManager.LoadScene("Simple Forest Scene");
 		return;
 	}
 }
