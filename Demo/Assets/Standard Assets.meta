@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 164c34b2e6b694dbcb7a0b95465c5cbb
 folderAsset: yes
 timeCreated: 1499797326
+=======
+guid: c20ba3f5dea137f4b925e5d14e7b9ec9
+folderAsset: yes
+timeCreated: 1500049057
+>>>>>>> Chad_Table_View
 licenseType: Free
 DefaultImporter:
   userData: 
