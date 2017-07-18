@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 0502c5cef94ed8347ad8aad57f329301
+  - enabled: 1
+    path: Assets/Scenes/Simple Forest Scene.unity
+    guid: 618410058b176431f88d81fb71951501
