@@ -12,11 +12,15 @@ public class DataPoint {
 	public string[] birdCodes;
 	public int[] birdCounts;
 
+	#endregion
+
 	#region Initialization
 
 	public DataPoint() {
 		// Todo: Init with basic 
 	}
+
+	#endregion
 
 	#region Public Interface
 
@@ -25,6 +29,8 @@ public class DataPoint {
 		birdCodes = new string[arraySize];
 		birdCounts = new int[arraySize];
 	}
+
+	#endregion
 
 	#region Property Overrides
 
@@ -35,5 +41,7 @@ public class DataPoint {
 	public void SetBirdCount(int index, int count) {
 		birdCounts [index] = count;
 	}
+
+	#endregion
 }
 	

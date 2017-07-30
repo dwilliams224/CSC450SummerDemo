@@ -11,9 +11,15 @@ using UnityEngine;
 
 public class DataPointManager : MonoBehaviour {
 
-	public static DataPointManager dataPointManager;
+	#region Properties
 
-#region Initialization 
+	public DataPoint dataPoint;
+
+	public static GameObject dataPointManager;
+
+	#endregion
+
+	#region Initialization 
 
 	void Awake () {
 		// Ensures only one copy of this Object exists
@@ -25,7 +31,9 @@ public class DataPointManager : MonoBehaviour {
 		}
 	}
 
-#region Public Interface
+	#endregion
+
+	#region Public Interface
 
 	public void SelectPoint() {
 		GameObject targetData = GameObject.Find("TargetData");
@@ -35,4 +43,6 @@ public class DataPointManager : MonoBehaviour {
 		LoadingScreenManager.LoadScene("Simple Forest Scene");
 		return;
 	}
+
+	#endregion
 }
