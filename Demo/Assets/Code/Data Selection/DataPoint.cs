@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataPoint {
+public class DataPoint: MonoBehaviour {
 
 	#region Properties
 
