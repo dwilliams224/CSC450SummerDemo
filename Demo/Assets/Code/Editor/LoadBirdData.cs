@@ -123,8 +123,8 @@ public class LoadBirdData : EditorWindow {
 					if (num > 0) { // If the count is > 0
 						string code = grid [x, 0]; // Get the code that coresponds with the count
 						//birds[entryIndex].setEntry(code, num); // Create an Entry for the point with the code and number seen
-						p.SetBirdCode (i, code);
-						p.SetBirdCount (i, num);
+						p.birdCodes[i] = code;
+						p.birdCounts[i] = num;
 						i++; // Increment the Entry array index
 					}
 				}
