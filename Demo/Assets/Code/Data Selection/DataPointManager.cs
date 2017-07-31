@@ -37,7 +37,8 @@ public class DataPointManager : MonoBehaviour {
 
 	private void createDataPoint(string name) {
 		GameObject megaPoint = GameObject.Find(name);      
-		dataPoint = megaPoint.GetComponent<DataPoint>();
+		dataPoint = Instantiate(megaPoint.GetComponent<DataPoint>());
+		DontDestroyOnLoad (dataPoint);
 	}
 
 	#endregion
