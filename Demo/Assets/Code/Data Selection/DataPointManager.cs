@@ -44,13 +44,10 @@ public class DataPointManager : MonoBehaviour {
 
 	#region Public Interface
 
-	public void SelectPoint() {
-		GameObject targetData = GameObject.Find("TargetData");
-		TargetDataPoint targetDataPoint = targetData.GetComponent<TargetDataPoint> ();
-		targetDataPoint.SetDataPoint (gameObject.name);
+	public void SelectPoint(string selectedPointName) {
+		createDataPoint(selectedPointName);
 
 		LoadingScreenManager.LoadScene("Simple Forest Scene");
-		return;
 	}
 
 	#endregion
