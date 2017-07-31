@@ -14,14 +14,6 @@ public class DataPoint: MonoBehaviour {
 
 	#endregion
 
-	#region Initialization
-
-	public DataPoint() {
-		// Todo: Init with basic 
-	}
-
-	#endregion
-
 	#region Public Interface
 
 	public void sizeArrays(int arraySize) {
