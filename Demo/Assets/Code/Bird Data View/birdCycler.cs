@@ -3,35 +3,28 @@ using UnityEngine.UI;
 
 public class birdCycler : MonoBehaviour {
  
-    private GameObject targetData;
-    private GameObject megaPoint;
     private GameObject wikiCanvas;
     private GameObject wikiImage;
     private GameObject wikiNum;
-    private DataPoint dataPoint;
-    private TargetDataPoint targetDataPoint;
-    private string currentDataPoint;
+
+	private GameObject dataPointManagerObject;
+    private DataPointManager dataPointManager;
+
+    private DataPoint currentDataPoint;
     private string birdCode;
     private int birdCount;
     private int birdNum;
+
     private Texture2D birdTexture;
     private Text textField;
     int i = 0;
 
-
-    void prepBirdData(){
-          currentDataPoint = targetDataPoint.GetDataPoint();
-          megaPoint = GameObject.Find(currentDataPoint);      
-          dataPoint = megaPoint.GetComponent<DataPoint>();
-          birdNum = dataPoint.BirdTypeQuantity;
-    }
-
     void pullBirdCode(int num){
-          birdCode = dataPoint.GetBirdCode(num);
+		birdCode = currentDataPoint.birdCodes[num];
     }
 
     void pullBirdCount(int num){
-          birdCount = dataPoint.GetBirdCount(num);
+          birdCount = currentDataPoint.birdCounts[num];
     }
 
     public void loadWiki(){
@@ -42,7 +35,6 @@ public class birdCycler : MonoBehaviour {
     }
 
     public void nextWiki(){
-        //Debug.Log(i);
         if (i < (birdNum - 1)){
             i++;
             pullBirdCode(i);
@@ -73,7 +65,6 @@ public class birdCycler : MonoBehaviour {
             pullBirdCount(i);
             loadWiki();
         }
-
     }
 
     public void closeWiki()
@@ -82,15 +73,17 @@ public class birdCycler : MonoBehaviour {
     }
 
     void Start() {
-        targetData = GameObject.Find("TargetData");
+		dataPointManagerObject = GameObject.Find("Data Point Manager");
+		dataPointManager = dataPointManagerObject.GetComponent<DataPointManager>();
+		currentDataPoint = dataPointManager.dataPoint;
+		birdNum = currentDataPoint.birdTypeQuantity;
+
         wikiCanvas = GameObject.Find("WikiCanvas");
         wikiImage = GameObject.Find("Wiki");
         wikiNum = GameObject.Find("NumText");
+
         textField = wikiNum.GetComponent<Text>();
-        targetDataPoint = targetData.GetComponent<TargetDataPoint>();
-	    currentDataPoint = null;
 
-        prepBirdData();
-
+		nextWiki ();
     }
 }
