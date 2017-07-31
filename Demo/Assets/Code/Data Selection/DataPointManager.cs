@@ -33,6 +33,15 @@ public class DataPointManager : MonoBehaviour {
 
 	#endregion
 
+	#region Internal Helpers
+
+	private void createDataPoint(string name) {
+		GameObject megaPoint = GameObject.Find(name);      
+		dataPoint = megaPoint.GetComponent<DataPoint>();
+	}
+
+	#endregion
+
 	#region Public Interface
 
 	public void SelectPoint() {
