@@ -6,12 +6,8 @@ public class SelectDataPoint : MonoBehaviour {
 
 	public void SelectPoint() {
 		// Locates the TargetData GO and sets the executing Point as the current target
-		GameObject targetData = GameObject.Find("TargetData");
-		TargetDataPoint targetDataPoint = targetData.GetComponent<TargetDataPoint> ();
-		targetDataPoint.SetDataPoint (gameObject.name);
-
-		// Loads the WorldScene
-		LoadingScreenManager.LoadScene("Simple Forest Scene");
-		return;
+		GameObject managerObject = GameObject.Find("Data Point Manager");
+		DataPointManager pointManager = managerObject.GetComponent<DataPointManager> ();
+		pointManager.SelectPoint(gameObject.name);
 	}
 }
