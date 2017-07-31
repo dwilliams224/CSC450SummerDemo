@@ -36,7 +36,7 @@ public class vrHUD : MonoBehaviour {
   void pullCoordinates(){
       megaPoint = GameObject.Find(targetDataPoint.GetDataPoint());
       dataPoint = megaPoint.GetComponent<DataPoint>();
-      curCoor = dataPoint.Coordinates;
+     // curCoor = dataPoint.Coordinates;
       mpId = dataPoint.id;
     }
 
