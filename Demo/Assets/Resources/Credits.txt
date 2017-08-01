@@ -1,22 +1,26 @@
 > Development Team < 
 Andrew Byrd
+Ryan Bagby
+Chad Brewer
 Mark Godsey
 Derek Hockett
-Ryan Jenkins 
+Ryan Jenkins
+Leonard Museau 
 Tara Walton
+Darren Williams
 
 > Art Team <
 Ryan Jenkins
 
-> Documentation/Technical Writing <
-Matthew Addler
-Brent Eaves
-Tara Walton
+> Technical Writing <
+Ryan Bagby
+Chad Brewer
+Leonard Museau
 
 > Special Thanks <
 Google 
 Trello
 Github
-GroupMe
+Slack
 The Audubon Society of Missouri
 The Cornell Lab of Ornithology
